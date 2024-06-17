@@ -1,0 +1,95 @@
+{
+  "address": "0x92e9bf62f8e3F62029EabaB13d9F6C4491a645E6",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getNumber",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_storedNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNumber",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "storedNumber",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xbb06a79066d6d7c0316eb61b739eed69fac5b5e5ffdb9d6d43921d470d82cb7d",
+  "receipt": {
+    "to": null,
+    "from": "0x9f17300E6Ba198D1d1071F89AC59c5536b7D8ABE",
+    "contractAddress": "0x92e9bf62f8e3F62029EabaB13d9F6C4491a645E6",
+    "transactionIndex": 34,
+    "gasUsed": "95293",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x85cb2660104e56c7ca85a46f03af9ed79f033bcff3c86423ddabc06f6da7b3ed",
+    "transactionHash": "0xbb06a79066d6d7c0316eb61b739eed69fac5b5e5ffdb9d6d43921d470d82cb7d",
+    "logs": [],
+    "blockNumber": 6116385,
+    "cumulativeGasUsed": "3291427",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "19d85d888ea5bfbee447127ab916ffb9",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_storedNumber\",\"type\":\"uint256\"}],\"name\":\"setNumber\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"storedNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/SimpleStorage.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\ncontract SimpleStorage {\\r\\n    uint256 public storedNumber;\\r\\n\\r\\n    function setNumber(uint256 _storedNumber) public {\\r\\n        storedNumber = _storedNumber;\\r\\n    }\\r\\n\\r\\n    function getNumber() public view returns (uint256) {\\r\\n        return storedNumber;\\r\\n    }\\r\\n}\",\"keccak256\":\"0xea5a5bc1ddf59e1467ccd32134aa66ba571e0812f9a4e033c31267d2cf82389d\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060c28061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c806309ce9ccb1460415780633fb5c1cb14605b578063f2c9ecd814606d575b600080fd5b604960005481565b60405190815260200160405180910390f35b606b60663660046074565b600055565b005b6000546049565b600060208284031215608557600080fd5b503591905056fea264697066735822122042946cacc2f014e6cebc6b00732bee1eae87f38e00aaad536495780f34d1f2d564736f6c63430008110033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c806309ce9ccb1460415780633fb5c1cb14605b578063f2c9ecd814606d575b600080fd5b604960005481565b60405190815260200160405180910390f35b606b60663660046074565b600055565b005b6000546049565b600060208284031215608557600080fd5b503591905056fea264697066735822122042946cacc2f014e6cebc6b00732bee1eae87f38e00aaad536495780f34d1f2d564736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/SimpleStorage.sol:SimpleStorage",
+        "label": "storedNumber",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
